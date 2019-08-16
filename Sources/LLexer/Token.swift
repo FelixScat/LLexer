@@ -22,6 +22,7 @@ import Foundation
 /// - atProtocol: @protocol
 /// - atInterface: @interface
 /// - atImplementation: @implementation
+/// - atProperty: @property
 /// - atEnd: @end
 /// - atImport: @import
 /// - atClass: @class
@@ -61,6 +62,7 @@ public enum TokenType {
     case atProtocol
     case atInterface
     case atImplementation
+    case atProperty
     case atEnd
     case atImport
     case atClass

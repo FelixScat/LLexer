@@ -259,6 +259,8 @@ extension LLexer {
             return Token(type: .atInterface, text: "@interface")
         }else if check(str: "@implementation") {
             return Token(type: .atImplementation, text: "implementation")
+        }else if check(str: "@property") {
+            return Token(type: .atProperty, text: "@property")
         }else if check(str: "@end") {
             return Token(type: .atEnd, text: "@end")
         }else if check(str: "@import") {
