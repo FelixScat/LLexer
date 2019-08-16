@@ -11,7 +11,7 @@ extension String {
     
     /// 注释类型
     var commentsStyles: [String] {
-        return ["//.*?\\n", "/\\*[\\s\\S]*?\\*/"]
+        return ["^//.*?\\n", "/\\*[\\s\\S]*?\\*/"]
     }
     
     /// 将所有注释去除
